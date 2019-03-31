@@ -18,7 +18,7 @@
 "
 "   Additions by Artem Nezvigin <artem@artnez.com>
 
-command! -nargs=* -complete=file -bang Rename call Rename(<q-args>, '<bang>')
+command! -nargs=* -complete=file -bang RenameF call Rename(<q-args>, '<bang>')
 
 function! s:createParentPath(filepath)
     if filereadable(a:filepath)
